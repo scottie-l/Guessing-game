@@ -6,7 +6,7 @@ let agebol = false;
 let livebol = false;
 let carbol = false;
 let cookbol = false;
-let totalCorrect = 0
+// let totalCorrect = *add to get total right at end of game.
 
 // *Best Practice to call out functions below global variables.
 
