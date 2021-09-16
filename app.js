@@ -22,12 +22,16 @@ let married = prompt("Am I married?");
 let totalCorrect = 0
 console.log(married);
 
+function isCor() {
+    alert("you are correct");
+} 
+
 if (married.toUpperCase() == 'YES') {
     marriedbol = true;
-    alert("you are correct");
+    isCor()
 } else if (married.toUpperCase() == 'Y') {
     marriedbol = true;
-    alert("You are correct");
+    isCor()
 } else {
        alert("please guess again")
 }
@@ -38,10 +42,10 @@ console.log(age);
 
 if (age.toUpperCase() == 'YES') {
     agebol = true;
-    alert("you are correct");
+    isCor()
 } else if (age.toUpperCase() == 'Y') {
     agebol = true;
-    alert("You are correct");    
+    isCor()
 } else {
     alert("please guess again");
 }
@@ -52,10 +56,10 @@ console.log(live);
 
 if (live.toUpperCase() == 'YES') {
     livebol = true;
-    alert("you are correct");
+    isCor()
 } else if (live.toUpperCase() == 'Y') {
     livebol = true;
-    alert("You are correct");
+    isCor()
 } else {
     alert("please guess again");
 }
@@ -66,10 +70,10 @@ console.log(car);
 
 if (car.toUpperCase() == 'YES') {
     carbol = true;
-    alert("you are correct");
+   isCor()
 } else if (car.toUpperCase() == 'Y') {
     carbol = true;
-    alert("You are correct");
+    isCor()
 } else {
     alert("please guess again");
 }
@@ -80,10 +84,10 @@ console.log(cook);
 
 if (cook.toUpperCase() == 'YES') {
     cookbol = true;
-    alert("you are correct");
+    isCor()
 } else if (cook.toUpperCase() == 'Y') {
     cookbol = true;
-    alert("You are correct");
+    isCor()
 } else {
     alert("please guess again");
 }
