@@ -4,17 +4,24 @@ h1 {
     text-align: center;
 }
 
-h3 {
+h2 {
     background-color:green;
     color:white;
+    text-align: center;
+}
+
+h3 {
+    background-color: Grey;
+    color: pink;
     text-align: left;
+    font-display: center; 
 }
 
 footer {
     background-color: black;
     color:white;
-    text: 10px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 5px;
 }
 
 body {
