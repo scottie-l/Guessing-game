@@ -6,6 +6,7 @@ let agebol = false;
 let livebol = false;
 let carbol = false;
 let cookbol = false;
+let totalCorrect = 0
 
 // *Best Practice to call out functions below global variables.
 
@@ -18,6 +19,7 @@ alert("Welcome " + name + ". It's nice to meet you. Now let's get to know me. Go
 
 // Question #1
 let married = prompt("Am I married?");
+let totalCorrect = 0
 console.log(married);
 
 if (married.toUpperCase() == 'YES') {
@@ -27,7 +29,7 @@ if (married.toUpperCase() == 'YES') {
     marriedbol = true;
     alert("You are correct");
 } else {
-       alert("please guess again");
+       alert("please guess again")
 }
 
 // Question #2
@@ -96,9 +98,9 @@ if (marriedbol == true && agebol == true && livebol == true && carbol == true &&
 // Question #6 - numeric guessing game
 let answer = 4;  // Variable created with correct answer
 let x;  // Created global variable to call outside of loop after guesses exhausted.
-let number = parseInt(prompt("Please guess a number between 1-5")); 
+let number = parseInt(prompt("Please guess a number between 1-10")); 
 
-for (x = 0; x < 4; x++) {
+for (x = 0; x <= 4; x++) {
     console.log(number);
     if (number < answer) {
         number = parseInt(prompt("You are too low, please try again."));
