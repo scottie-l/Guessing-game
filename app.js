@@ -6,10 +6,9 @@ let agebol = false;
 let livebol = false;
 let carbol = false;
 let cookbol = false;
-// let totalCorrect = *add to get total right at end of game.
+let totalCorrect = 0
 
 // *Best Practice to call out functions below global variables.
-
 // *Best Practice to envoke functions last.
 
 // Prompt for name when enter site
@@ -19,18 +18,19 @@ alert("Welcome " + name + ". It's nice to meet you. Now let's get to know me. Go
 
 // Question #1
 let married = prompt("Am I married?");
-let totalCorrect = 0
 console.log(married);
 
 if (married.toUpperCase() == 'YES') {
     marriedbol = true;
+    totalCorrect ++;
     alert("you are correct");
 } else if (married.toUpperCase() == 'Y') {
     marriedbol = true;
+    totalCorrect ++;    
     alert("You are correct");
 } else {
        alert("please guess again")
-}
+}   
 
 // Question #2
 let age = prompt("Am I over 35 years old?");
@@ -38,9 +38,11 @@ console.log(age);
 
 if (age.toUpperCase() == 'YES') {
     agebol = true;
+    totalCorrect ++; 
     alert("you are correct");
 } else if (age.toUpperCase() == 'Y') {
     agebol = true;
+    totalCorrect ++; 
     alert("You are correct");    
 } else {
     alert("please guess again");
@@ -52,9 +54,11 @@ console.log(live);
 
 if (live.toUpperCase() == 'YES') {
     livebol = true;
+    totalCorrect ++; 
     alert("you are correct");
 } else if (live.toUpperCase() == 'Y') {
     livebol = true;
+    totalCorrect ++; 
     alert("You are correct");
 } else {
     alert("please guess again");
@@ -66,9 +70,11 @@ console.log(car);
 
 if (car.toUpperCase() == 'YES') {
     carbol = true;
+    totalCorrect ++; 
     alert("you are correct");
 } else if (car.toUpperCase() == 'Y') {
     carbol = true;
+    totalCorrect ++; 
     alert("You are correct");
 } else {
     alert("please guess again");
@@ -80,9 +86,11 @@ console.log(cook);
 
 if (cook.toUpperCase() == 'YES') {
     cookbol = true;
+    totalCorrect ++; 
     alert("you are correct");
 } else if (cook.toUpperCase() == 'Y') {
     cookbol = true;
+    totalCorrect ++; 
     alert("You are correct");
 } else {
     alert("please guess again");
@@ -95,7 +103,7 @@ if (marriedbol == true && agebol == true && livebol == true && carbol == true &&
     alert("Sorry, please try again.");
 }
 
-// Question #6 - numeric guessing game
+// // Question #6 - numeric guessing game
 let answer = 4;  // Variable created with correct answer
 let x;  // Created global variable to call outside of loop after guesses exhausted.
 let number = parseInt(prompt("Please guess a number between 1-10")); 
@@ -107,6 +115,7 @@ for (x = 0; x <= 4; x++) {
     } else if (number > answer) {
         number = parseInt(prompt("You are too high, please try again."));
     } else {
+        totalCorrect ++; 
         alert("You are corret");
         break;
     }
@@ -122,12 +131,13 @@ let response = null;
 let attempts = 6;
 
 hasAttempts: while (attempts) {
-    response = prompt(multiQ + "\n you have " + attempts + " attempts left").toUpperCase(); //\n creates line break in prompt
+    response = prompt(multiQ + "\n you have " + attempts + " attempts left").toUpperCase(); // \n creates line break in prompt
     attempts -= 1;  //deprecate response by 1
     console.log(response, attempts)
 
     for (let i = 0; i < multi.length; i++) {
         if (response === multi[i]) {
+            totalCorrect ++; 
             alert("You correct!");
             break hasAttempts;
         }           
@@ -136,3 +146,5 @@ hasAttempts: while (attempts) {
 if (!attempts) {  // ! = not. So !attempts is inverse meaning not attempts
     alert("You're out of attempts. The correct answer is both A and C");
 }
+
+alert('You got ' + totalCorrect + ' /7.')
