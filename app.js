@@ -20,14 +20,25 @@ alert("Welcome " + name + ". It's nice to meet you. Now let's get to know me. Go
 let married = prompt("Am I married?");
 console.log(married);
 
+function isCor() {
+    alert("you are correct");
+} 
+
 if (married.toUpperCase() == 'YES') {
     marriedbol = true;
+<<<<<<< HEAD
     totalCorrect ++;
     alert("you are correct");
 } else if (married.toUpperCase() == 'Y') {
     marriedbol = true;
     totalCorrect ++;    
     alert("You are correct");
+=======
+    isCor()
+} else if (married.toUpperCase() == 'Y') {
+    marriedbol = true;
+    isCor()
+>>>>>>> 7efe06cbd1669781fa0a193ecea16cac7ee111b7
 } else {
        alert("please guess again")
 }   
@@ -38,12 +49,19 @@ console.log(age);
 
 if (age.toUpperCase() == 'YES') {
     agebol = true;
+<<<<<<< HEAD
     totalCorrect ++; 
     alert("you are correct");
 } else if (age.toUpperCase() == 'Y') {
     agebol = true;
     totalCorrect ++; 
     alert("You are correct");    
+=======
+    isCor()
+} else if (age.toUpperCase() == 'Y') {
+    agebol = true;
+    isCor()
+>>>>>>> 7efe06cbd1669781fa0a193ecea16cac7ee111b7
 } else {
     alert("please guess again");
 }
@@ -54,12 +72,19 @@ console.log(live);
 
 if (live.toUpperCase() == 'YES') {
     livebol = true;
+<<<<<<< HEAD
     totalCorrect ++; 
     alert("you are correct");
 } else if (live.toUpperCase() == 'Y') {
     livebol = true;
     totalCorrect ++; 
     alert("You are correct");
+=======
+    isCor()
+} else if (live.toUpperCase() == 'Y') {
+    livebol = true;
+    isCor()
+>>>>>>> 7efe06cbd1669781fa0a193ecea16cac7ee111b7
 } else {
     alert("please guess again");
 }
@@ -70,12 +95,19 @@ console.log(car);
 
 if (car.toUpperCase() == 'YES') {
     carbol = true;
+<<<<<<< HEAD
     totalCorrect ++; 
     alert("you are correct");
 } else if (car.toUpperCase() == 'Y') {
     carbol = true;
     totalCorrect ++; 
     alert("You are correct");
+=======
+   isCor()
+} else if (car.toUpperCase() == 'Y') {
+    carbol = true;
+    isCor()
+>>>>>>> 7efe06cbd1669781fa0a193ecea16cac7ee111b7
 } else {
     alert("please guess again");
 }
