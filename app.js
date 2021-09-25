@@ -27,8 +27,10 @@ function isCor() {
 if (married.toUpperCase() == 'YES') {
     marriedbol = true;
     isCor()
+    totalCorrect ++; 
 } else if (married.toUpperCase() == 'Y') {
     marriedbol = true;
+    totalCorrect ++; 
     isCor()
 } else {
        alert("please guess again")
@@ -40,9 +42,11 @@ console.log(age);
 
 if (age.toUpperCase() == 'YES') {
     agebol = true;
+    totalCorrect ++; 
     isCor()
 } else if (age.toUpperCase() == 'Y') {
     agebol = true;
+    totalCorrect ++; 
     isCor()
 } else {
     alert("please guess again");
@@ -54,9 +58,11 @@ console.log(live);
 
 if (live.toUpperCase() == 'YES') {
     livebol = true;
+    totalCorrect ++; 
     isCor()
 } else if (live.toUpperCase() == 'Y') {
     livebol = true;
+    totalCorrect ++; 
     isCor()
 } else {
     alert("please guess again");
@@ -68,9 +74,11 @@ console.log(car);
 
 if (car.toUpperCase() == 'YES') {
     carbol = true;
-   isCor()
+    totalCorrect ++; 
+    isCor()
 } else if (car.toUpperCase() == 'Y') {
     carbol = true;
+    totalCorrect ++; 
     isCor()
 } else {
     alert("please guess again");
@@ -83,11 +91,11 @@ console.log(cook);
 if (cook.toUpperCase() == 'YES') {
     cookbol = true;
     totalCorrect ++; 
-    alert("you are correct");
+    isCor()
 } else if (cook.toUpperCase() == 'Y') {
     cookbol = true;
     totalCorrect ++; 
-    alert("You are correct");
+    isCor()
 } else {
     alert("please guess again");
 }
@@ -112,7 +120,7 @@ for (x = 0; x <= 4; x++) {
         number = parseInt(prompt("You are too high, please try again."));
     } else {
         totalCorrect ++; 
-        alert("You are corret");
+        isCor()
         break;
     }
 }
@@ -134,7 +142,7 @@ hasAttempts: while (attempts) {
     for (let i = 0; i < multi.length; i++) {
         if (response === multi[i]) {
             totalCorrect ++; 
-            alert("You correct!");
+            isCor()
             break hasAttempts;
         }           
     }   alert("Sorry, but that is incorrect. Please guess again.")
